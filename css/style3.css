@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --white:#f7f7f7;
+    --white-blur:#f7f7f7d5;
+    --black:#222121;
+    --black-blur:#2c2b2bc2;
+    --grey:#7978781f;
+    --light-grey:rgba(109, 106, 106, 0.034);
+    --blue:rgba(0, 110, 255, 0.692);
+    --orange:rgba(192, 150, 71, 0.589);
+    
+}
+body{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 0.8px;
+}
+
+
+.section-title{
+    color:var(--black);
+    font-weight: 500;
+}
+        
+/* ---------------------------------------------- */
+
+@media only screen and (min-width : 576px) {
+     #banner img{
+        height: 90vh;
+     }
+}
+@media only screen and (max-width: 576px) {
+     #banner img{
+        height: 100vh;
+    }
+ }
+
+ #banner span{
+    font-size: 0.8rem ;
+    font-weight: 100;
+    color:var(--white-blur);
+ }
+
+#banner img{
+        background-size: cover;
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        filter: brightness(0.5) saturate(0.7) blur(1.5px) ;
+    }
+
+
+/* ---------------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    #nav-bar ul{
+        font-size:1.3rem;
+        margin-left: 2rem;
+        line-height: 2rem;
+    }
+}
+#nav-bar {
+    color:var(--black) !important;
+    font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------------- */
+#about #personal-info li{
+    padding-top:0.3rem;
+}
+#about #target{
+    background-color: var(--light-grey);
+}
+#about #personal-info{
+    background-color: var(--grey);
+}
+#about:not(strong){
+    color:var(--black-blur);
+}
+
+/* ----------------------------------------------------------------------------- */
+
+#job-info h6{
+    color:var(--black-blur);
+    font-weight: 600;
+}
+#job-info .job-info-box{
+    border: 1px solid #e0dcdcd8;
+}
+
+#job-info p{
+    font-size: 0.85rem;
+    color: var(--black-blur);
+}
+#job-info span{
+    font-size: 0.83rem;
+    font-weight: 600;
+    font-style: italic;
+}
+#job-info .circle-icon-content span{
+    font-size: 0.83rem;
+    font-weight: 200;
+    font-style: none;
+}
+#job-info .hientai{
+    border-radius: 5px;
+    background-color: var(--blue) ;
+    width: 4.5rem;
+    height: 1rem;
+    color: var(--white);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#job-info li:before{
+    content: "•";
+    color: var(--blue);
+    font-size: 2rem;
+    position: relative;
+    left:-1.8rem;
+    top:1.8rem;
+}
+#job-info li{
+    list-style-type: none;
+}
+#job-info ul{
+    padding-left:1rem;
+}
+
+#job-info .mini-icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#job-info .skill-line-blue{
+    height: 1rem;
+    width: 3rem;
+    border-top:2px solid var(--blue);
+    margin-top: 0.8rem;
+    margin-right: 0.2rem;
+    display: inline-block;
+}
+#job-info .skill-line-grey{
+    height: 1rem;
+    width: 3rem;
+    border-top:2px solid rgba(109, 106, 106, 0.13);
+    margin-top: 0.5rem;
+    margin-right: 0.2rem;
+    display: inline-block;
+}
+
+/* ------------------------------------------------------ */
+
+#certificate {
+    background-color: var(--light-grey);
+}
+#certificate p{
+    color: var(--black-blur);
+}
+/* ------------------------------------------------------ */
+#project td{
+    font-size: 0.85rem;
+    color: var(--black-blur);
+}
+
+
+/* ------------------------------------------------------ */
+
+#footer ul{
+    list-style-type: none;
+    background-color:var(--grey);
+    height: 10vh;
+    justify-content: center;
+    
+}
+#footer .space{
+    justify-content:space-evenly;
+
+}
+
+
